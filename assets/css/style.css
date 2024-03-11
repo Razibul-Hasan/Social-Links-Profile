@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -8,4 +14,53 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+.social-card {
+  background-color: hsl(0, 0%, 12%);
+  width: 350px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-card > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.social-card .name {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.social-card .address {
+  color: hsl(75, 94%, 57%);
+  margin: 8px 0px;
+}
+.work-title {
+  margin-bottom: 8px;
+}
+
+.btn {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  padding: 15px 30px;
+  margin: 8px 0px;
+  width: 250px;
+  background-color: hsl(0, 0%, 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
 }
